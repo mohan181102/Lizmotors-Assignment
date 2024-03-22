@@ -112,7 +112,7 @@ function App() {
                   showmanufacture ||
                   showmanufacture ||
                   showplannig) != true
-              ? " sm:opacity-100"
+              ? " sm:opacity-100 opacity-50"
               : "opacity-50"
           } ${level == 0 ? " sm:left-[100%]" : ""}  ${
             level == 1 ? " sm:left-[30%]" : ""
@@ -236,7 +236,15 @@ function App() {
           className={`box ${
             level == 1 ? " sm:left-[30%] sm:top-[32%]" : ""
           } sm:left-[100%] internal fixed left-[25%] top-[31%]  ${
-            externalshow ? "  opacity-100" : " opacity-50"
+            externalshow
+              ? ""
+              : (showsales ||
+                  showdesign ||
+                  showmanufacture ||
+                  showmanufacture ||
+                  showplannig) != true
+              ? " sm:opacity-100 opacity-50"
+              : "opacity-50"
           }`}
         >
           <p className={`text`} id="internal">
