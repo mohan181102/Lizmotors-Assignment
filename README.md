@@ -1,5 +1,6 @@
 
-APP LINK :- 
+APP LINK :-  https://lizmotors-assignment.vercel.app/
+
 **To install React with Vite, you can follow these steps:**
 
 1. Node.js Installation:
